@@ -1,0 +1,377 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anusha Rafique | Portfolio</title>
+<link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+</head>
+<body>
+    <header>
+<div class="logo">
+<i class="fa-solid fa-laptop-code"></i>
+<h2>AR Portfolio</h2>
+</div>
+<nav>
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#education">Education</a>
+
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="hero" id="home">
+<div class="hero-content">
+<h3>Hello, I'm</h3>
+<h1>Anusha Rafique</h1>
+<h2>Computer Science Student</h2>
+<p>Passionate about Web Development andcreating beautiful responsive websites
+using HTML & CSS.</p>
+<div class="hero-buttons">
+<a href="#projects" class="btn">My Projects</a>
+       
+<a href="{% static 'CV/Anusha_Rafique_CV.pdf' %}" class="btn" download>
+    Download CV
+</a>
+</div>
+<div class="social-icons">
+<a href="https:\\github.com"><i class="fa-brands fa-github"></i></a>
+
+<a href="https:\\linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+
+<a href="https:\\instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+<a href="https:\\facebook.com"><i class="fa-brands fa-facebook"></i></a>
+</div>
+</div>
+<div class="hero-image">
+<img src="{% static 'images/download (9).jpg' %}" alt="Image">
+</div>
+</section>
+<section class="about" id="about">
+<h2 class="heading">About Me</h2>
+<div class="about-container">
+<div class="about-image">
+<img src="{% static 'images/guys, if you are muslim, comment and follow  me, and I will give you a shout out!.jpg' %}" alt="About">
+</div>
+<div class="about-content">
+<h3>Hello! I'm Anusha Rafique</h3>
+<p>
+I am a Computer Science student at GCUF.
+Currently learning HTML, CSS, Web Development,
+WordPress and Webflow.
+</p>
+<p>
+    I have also participated in
+    <span class="highlight">Quran Tilawat</span>
+    and
+    <span class="highlight">Art Competitions</span>
+    and received
+    <span class="award">awards.</span>
+</p>
+<div class="about-info">
+<div>
+ <i class="fa-solid fa-graduation-cap"></i>
+<h4>Education</h4>
+<p>BS Computer Science</p>
+</div>
+<div>
+<i class="fa-solid fa-building-columns"></i>
+<h4>University</h4>
+<p>GCUF</p>
+</div>
+<div>
+ <i class="fa-solid fa-laptop-code"></i>
+<h4>Experience</h4>
+<p>Frontend Developer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--SKILLS-->
+
+<section class="skills" id="skills">
+    <h2 class="heading">My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Semantic HTML, Forms, Tables, Structure</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, Animation, Transition</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Responsive Design</h3>
+            <p>Responsive layouts for different devices</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScrip</h3>
+            <p>Basic JavaScript, DOM & Interactive Web Pages</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+            <p>Python Programming & Basic Concepts</p>
+        </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Frontend Developer</p>
+        </div>
+    </div>
+</section>
+<!--/*Projects*/-->
+<section class="projects-section" id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Coffee Website -->
+        <div class="project-card">
+            <div class="project-image">
+                
+                <img src="{% static 'images/Screenshot (251).png' %}" alt="Coffee Website">
+            </div>
+
+            <div class="project-content">
+                <h3>Coffee Website</h3>
+                <p>
+                    A modern and responsive coffee website created using
+                    HTML and CSS with a beautiful user-friendly design.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <a href="{% url 'coffee' %}" class="project-btn">View Project</a>
+            
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--COURSES & CERTIFICATIONS-->
+
+<section class="certificates" id="certificates">
+    <h2 class="heading">Courses & Achievements</h2>
+    <div class="certificate-container">
+        <!-- Card 1 -->
+        <div class="certificate-card">
+            <i class="fa-solid fa-book-quran"></i>
+            <h3>Basic Tajweed Course</h3>
+            <p>
+                Successfully completed the Basic Tajweed Course and learned the basic rules of Quran recitation.
+            </p>
+            <span class="status completed">Completed</span>
+            <br><br>
+        <a href="./Final certificate.jpeg" target="_blank" class="project-btn">
+         View Certificate
+        </a>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-mosque"></i>
+            <h3>Advanced Tajweed Course</h3>
+            <p>
+                Currently learning advanced Tajweed rules and improving Quran recitation.
+            </p>
+            <span class="status progress">Completed</span>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p>
+                Learning HTML, CSS, Responsive Design, CSS Grid, Animations and Transitions.
+            </p>
+            <span class="status learning">Completed</span>
+        </div>
+
+         <!-- Card 4 -->
+
+
+ <!-- Card 5 -->
+
+<div class="certificate-card">
+    <i class="fa-solid fa-trophy"></i>
+    <h3>1st Position - Tilawat Competition</h3>
+    <p>
+        Awarded First Position in the Quran Tilawat Competition.
+    </p>
+    <span class="status completed">Achievement</span>
+    <br><br>
+    <a href="./Batch tilawt .jpeg" target="_blank" class="project-btn">
+       View Certificate
+    </a>
+</div>
+
+ <!-- Card 6 -->
+
+<div class="certificate-card">
+    <i class="fa-solid fa-palette"></i>
+    <h3>Basic Tajweed Art Competition</h3>
+    <p>
+        Achieved 2nd Position in the Basic Tajweed Art Competition.
+    </p>
+    <span class="status completed">Achievement</span>
+ <a href="./Art certificate.jpeg" 
+ target="_blank" 
+ class="project-btn">
+         View Certificate
+        </a>
+</div>
+    </div>
+</section>
+
+<!--EDUCATION-->
+
+<section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="education-container">
+        <div class="education-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>BS Computer Science</h3>
+            <h4>Government College University Faisalabad (GCUF)</h4>
+            <p>Currently studying BS Computer Science.</p>
+            <span>2024 - Present</span>
+        </div>
+        <div class="education-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <h4>TECNSOL</h4>
+            <p> Successfully completed a Web Development course with hands-on
+            experience in HTML, CSS, JavaScript, responsive web design,
+            and basic Python programming.
+        </p></p>
+        </div>
+        <div class="education-card">
+            <i class="fa-solid fa-book-quran"></i>
+            <h3>Tajweed Courses</h3>
+            <p>
+            <strong>Basic Tajweed Course</strong><br>
+            Completed with fundamental Tajweed rules and correct Quran pronunciation.
+        </p>
+
+        <p>
+            <strong>Advanced Tajweed Course</strong><br>
+            Completed with advanced Tajweed rules and accurate Quran recitation.
+        </p>
+        </div>
+    </div>
+</section>
+
+<!--CONTACT-->
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact Me</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Let's Work Together</h3>
+            <p>
+                Feel free to contact me for web development projects,
+                learning opportunities or collaboration.
+            </p>
+            <div class="info-box">
+                <i class="fa-solid fa-envelope"></i>
+                <span>anusharafique31@gmail.com</span>
+            </div>
+            <div class="info-box">
+                <i class="fa-solid fa-phone"></i>
+                <span>+92 3456789210</span>
+            </div>
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Faisalabad, Pakistan</span>
+            </div>
+        </div>
+        {% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+{% endif %}
+       <form class="contact-form" method="POST">
+    {% csrf_token %}
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <input type="text" name="subject" placeholder="Subject" required>
+
+    <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+    </div>
+</section>
+<!--FOOTER-->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>Anusha Rafique</h3>
+            <p>
+                Computer Science Student passionate about
+                Web Development and creating beautiful websites.
+            </p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-box">
+            <div class="footer-box">
+    <h3>Contact Me</h3>
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        anusharafique31@gmail.com
+    </p>
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        +92 3456789210
+    </p>
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Faisalabad, Pakistan
+    </p>
+    </div>
+    <hr>
+    <p class="copyright">
+        © 2026 Anusha Rafique | All Rights Reserved</p>
+</footer>
+<a href="https://web.whatsapp.com/" target="_blank" class="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<a href="#home" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+</body>
+</html>
